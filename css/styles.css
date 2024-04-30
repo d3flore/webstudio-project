@@ -1,0 +1,108 @@
+/* цвет заголовков #2E2F42 */
+/* цвет основоного текста #434455 */
+/* цвет фона шапки #E7E9FC */
+/* первый цвет секции #FFFFFF*/
+/* второй цвет секции цвет иконок внутри кнопок #F4F4FD */
+/* цвет кнопок #4D5AE5 */
+/* цвет hero заголовка и заголовка с соц сетям в подвале #FFFFFF */
+
+/* КАСТОМНЫЙ CSS СВОЙСТВА */
+:root {
+    --primary-text-color: #2E2F42;
+    --title-text-color: #2E2F42;
+    --white-title-text-color: #FFFFFF;
+    --icon-color: #F4F4FD;
+    --foreign-text-color: #434455;
+    --accent-color: #4D5AE5;
+    --focus-color: #404BBF;
+    -color-bb: #000000;
+}
+
+body {
+    background-color: var(--white-title-text-color);
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.link:hover, .link:focus {
+    color:  var(--focus-color);
+}
+
+/* Шапка старницы */
+
+.logo {
+    color: var(--title-text-color);
+}
+.logo-left {
+    color: var(--accent-color);
+}
+
+.logo-right {
+    color: var(--icon-color);
+}
+
+/* Навигация по сайту */
+.site-nav .link {
+    color:  var(--title-text-color);
+}
+
+.site-nav .link:hover, .site-nav .link:focus{
+    color: var(--focus-color);
+}
+
+.site-nav .link.current {
+    color: var(--focus-color);
+}
+
+/* Середина страницы для index.html*/
+
+/* Hero */
+.hero-title {
+    color: var(--white-title-text-color);
+}
+
+/* Section */
+section {
+    color: var(--title-text-color);
+}
+
+.section-title {
+    color: var(--title-text-color);
+}
+
+.section-text {
+    color: var(--foreign-text-color);
+}
+
+/* Button */
+.button {
+    color: var(--icon-color);
+    background-color: var(--accent-color);
+}
+
+.button.hero-button {
+    color: var(--white-title-text-color);
+}
+
+.button.social-media {
+    /* наследование класса button */
+    color: var(--icon-color);
+    background-color: var(--accent-color);
+}
+
+/* Footer */
+
+.footer-title {
+    color: var(--icon-color);
+}
+
+.footer-text {
+    color: var(--icon-color);
+}
+
+/* Середина старницы css для portfolia.html (можно подумать сделать файл отдельный portfolio.html */
+
+/* Свойства CSS Модуль 2 2:44:30 */
