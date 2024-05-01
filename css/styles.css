@@ -90,7 +90,6 @@ section {
 .button.social-media {
     /* наследование класса button */
     color: var(--icon-color);
-    background-color: var(--accent-color);
 }
 
 /* Footer */
