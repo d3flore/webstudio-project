@@ -92,6 +92,7 @@ section {
     color: var(--icon-color);
 }
 
+
 /* Footer */
 
 .footer-title {
@@ -105,3 +106,19 @@ section {
 /* Середина старницы css для portfolia.html (можно подумать сделать файл отдельный portfolio.html */
 
 /* Свойства CSS Модуль 2 2:44:30 */
+
+/* Portfolio.html */
+
+/* Button */
+
+.button.button-portfolio {
+    background-color: var(--icon-color);
+    color: var(--accent-color);
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--focus-color);
+    color: var(--white-title-text-color);
+}
+
