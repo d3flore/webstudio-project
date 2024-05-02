@@ -10,12 +10,12 @@
 :root {
     --primary-text-color: #2E2F42;
     --title-text-color: #2E2F42;
+    --foreign-text-color: #434455;
     --white-title-text-color: #FFFFFF;
     --icon-color: #F4F4FD;
-    --foreign-text-color: #434455;
     --accent-color: #4D5AE5;
     --focus-color: #404BBF;
-    -color-bb: #000000;
+    --color-bb: #000000;
 }
 
 body {
