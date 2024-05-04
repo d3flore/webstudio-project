@@ -21,11 +21,23 @@
 body {
     background-color: var(--white-title-text-color);
     color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.02em;
 }
 
 .list {
     list-style: none;
+    text-decoration: none;
 }
+
+.link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
 
 .link:hover, .link:focus {
     color:  var(--focus-color);
@@ -34,7 +46,11 @@ body {
 /* Шапка старницы */
 
 .logo {
+    text-decoration: none;
     color: var(--title-text-color);
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    line-height: 1.16;
 }
 .logo-left {
     color: var(--accent-color);
@@ -47,21 +63,23 @@ body {
 /* Навигация по сайту */
 .site-nav .link {
     color:  var(--title-text-color);
-}
-
-.site-nav .link:hover, .site-nav .link:focus{
-    color: var(--focus-color);
+    text-decoration: none;
 }
 
 .site-nav .link.current {
     color: var(--focus-color);
 }
 
-/* Середина страницы для index.html*/
+.site-nav .link:hover, .site-nav .link:focus{
+    color: var(--focus-color);
+}
 
-/* Hero */
-.hero-title {
-    color: var(--white-title-text-color);
+.link.contact-link {
+    text-decoration: none;
+    color: var(--foreign-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 /* Section */
@@ -69,27 +87,77 @@ section {
     color: var(--title-text-color);
 }
 
+.section-background {
+    background-color: var(--icon-color);
+}
+
 .section-title {
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
 }
 
 .section-text {
     color: var(--foreign-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
 }
+
+/* Середина страницы для index.html*/
+
+/* Hero */
+.hero-title {
+    color: var(--white-title-text-color);
+    background-color: var(--color-bb);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+}
+
+.button.hero-button {
+    text-decoration: none;
+    color: var(--white-title-text-color);
+}
+
+/* Info */
+.features-title, .worker-title {
+    color: var(--title-text-color);
+    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.features-text {
+    color: var(--foreign-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Our team */
+/* .worker-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+} */
 
 /* Button */
 .button {
     color: var(--icon-color);
     background-color: var(--accent-color);
-}
-
-.button.hero-button {
-    color: var(--white-title-text-color);
+    font-family: inherit;
 }
 
 .button.social-media {
     /* наследование класса button */
     color: var(--icon-color);
+    text-decoration: none;
 }
 
 
