@@ -8,135 +8,180 @@
 
 /* КАСТОМНЫЙ CSS СВОЙСТВА */
 :root {
-    --primary-text-color: #2E2F42;
-    --title-text-color: #2E2F42;
-    --foreign-text-color: #434455;
-    --white-title-text-color: #FFFFFF;
-    --icon-color: #F4F4FD;
-    --accent-color: #4D5AE5;
-    --focus-color: #404BBF;
-    --color-bb: #000000;
+  --primary-text-color: #2e2f42;
+  --title-text-color: #2e2f42;
+  --foreign-text-color: #434455;
+  --white-title-text-color: #ffffff;
+  --icon-color: #f4f4fd;
+  --accent-color: #4d5ae5;
+  --focus-color: #404bbf;
+  --color-bb: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 body {
-    background-color: var(--white-title-text-color);
-    color: var(--primary-text-color);
-    font-family: Roboto, sans-serif;
-    letter-spacing: 0.02em;
+  background-color: var(--white-title-text-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
 }
 
 .list {
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 .link {
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-
-
-.link:hover, .link:focus {
-    color:  var(--focus-color);
+.link:hover,
+.link:focus {
+  color: var(--focus-color);
 }
 
 /* Шапка старницы */
 
 .logo {
-    text-decoration: none;
-    color: var(--title-text-color);
-    font-family: Raleway, sans-serif;
-    font-size: 18px;
-    line-height: 1.16;
+  text-decoration: none;
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 1.16;
 }
 .logo-left {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .logo-right {
-    color: var(--icon-color);
+  color: var(--icon-color);
 }
 
 /* Навигация по сайту */
 .site-nav .link {
-    color:  var(--title-text-color);
-    text-decoration: none;
+  color: var(--title-text-color);
+  text-decoration: none;
 }
 
 .site-nav .link.current {
-    color: var(--focus-color);
+  color: var(--focus-color);
 }
 
-.site-nav .link:hover, .site-nav .link:focus{
-    color: var(--focus-color);
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--focus-color);
 }
 
 .link.contact-link {
-    text-decoration: none;
-    color: var(--foreign-text-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+  text-decoration: none;
+  color: var(--foreign-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--focus-color);
 }
 
 /* Section */
-section {
-    color: var(--title-text-color);
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  color: var(--title-text-color);
 }
 
 .section-background {
-    background-color: var(--icon-color);
+  background-color: var(--icon-color);
 }
 
 .section-title {
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
+  margin-bottom: 72px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
 }
 
 .section-text {
-    color: var(--foreign-text-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+  margin: 0;
+  color: var(--foreign-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* Середина страницы для index.html*/
 
 /* Hero */
+.hero {
+  text-align: center;
+}
+
 .hero-title {
-    color: var(--white-title-text-color);
-    background-color: var(--color-bb);
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
+  color: var(--white-title-text-color);
+  background-color: var(--color-bb);
+  font-weight: 700;
+  margin-bottom: 48px;
+  font-size: 56px;
+  line-height: 1.07;
 }
 
 .button.hero-button {
-    text-decoration: none;
-    color: var(--white-title-text-color);
+  min-width: 169px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-decoration: none;
+  color: var(--white-title-text-color);
+  border-radius: 4px;
 }
 
 /* Info */
-.features-title, .worker-title {
-    color: var(--title-text-color);
-    
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+.features-title,
+.worker-title {
+  color: var(--title-text-color);
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .features-text {
-    color: var(--foreign-text-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--foreign-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* Our team */
@@ -149,26 +194,28 @@ section {
 
 /* Button */
 .button {
-    color: var(--icon-color);
-    background-color: var(--accent-color);
-    font-family: inherit;
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  color: var(--icon-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
 }
 
 .button.social-media {
-    /* наследование класса button */
-    color: var(--icon-color);
-    text-decoration: none;
+  /* наследование класса button */
+  color: var(--icon-color);
+  text-decoration: none;
 }
-
 
 /* Footer */
 
 .footer-title {
-    color: var(--icon-color);
+  color: var(--icon-color);
 }
 
 .footer-text {
-    color: var(--icon-color);
+  color: var(--icon-color);
 }
 
 /* Середина старницы css для portfolia.html (можно подумать сделать файл отдельный portfolio.html */
@@ -180,13 +227,12 @@ section {
 /* Button */
 
 .button.button-portfolio {
-    background-color: var(--icon-color);
-    color: var(--accent-color);
+  background-color: var(--icon-color);
+  color: var(--accent-color);
 }
 
 .button:hover,
 .button:focus {
-    background-color: var(--focus-color);
-    color: var(--white-title-text-color);
+  background-color: var(--focus-color);
+  color: var(--white-title-text-color);
 }
-
