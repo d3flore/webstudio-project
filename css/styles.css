@@ -42,7 +42,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
+  outline: 0px solid tomato;
 }
 
 .list {
@@ -206,6 +206,18 @@ body {
   line-height: 1.2;
 }
 
+.features-list {
+  display: flex;
+}
+
+.features-list .item {
+  margin-right: 24px;
+}
+
+.features-list .item:last-child {
+  margin-right: 0;
+}
+
 .features-text {
   margin-top: 0;
   margin-bottom: 0;
@@ -215,6 +227,8 @@ body {
   line-height: 1.5;
 }
 
+/*  What are we doing */
+
 /* Our team */
 /* .worker-title {
     color: var(--title-text-color);
@@ -223,6 +237,42 @@ body {
     line-height: 1.2;
 } */
 
+.worker-list {
+  display: flex
+}
+
+.worker-list .item {
+  margin-right: 24px;
+  text-align: center;
+  border: 2px #000000;
+}
+.worker-list .item:last-child {
+  margin-right: 0;
+}
+
+.worker-list .item .section-text {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.social-media-list {
+  display: flex;
+  text-align: center;
+  width: 232px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.social-media-list .button.social-media {
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.social-media-list .item:last-child {
+  margin-right: 0;
+}
 /* Button */
 .button {
   display: inline-block;
@@ -239,21 +289,103 @@ body {
   text-decoration: none;
 }
 
+/* Customers */
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers-list .item {
+  margin-right: 26px;
+}
+
+.customers-list .item:last-child {
+  margin-right: 0;
+}
+
 /* Footer */
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-content {
+  margin-right: 120px;
+}
+
+.content-link {
+  display: inline-block;
+
+} 
+
+.footer-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  color: var(--title-text-color);
+  background-color: var(--primary-text-color);
+}
 
 .footer-title {
+  font-size: 12px;
+  font-weight:400;
+  margin-bottom: 16px;
   color: var(--icon-color);
 }
 
 .footer-text {
   color: var(--icon-color);
+  width: 264px;
 }
 
-/* Середина старницы css для portfolia.html (можно подумать сделать файл отдельный portfolio.html */
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 
-/* Свойства CSS Модуль 2 2:44:30 */
+.footer-list {
+  display: flex;
+}
+
+.footer-list .item {
+  margin-right: 16px;
+}
+
+.footer-list .button.social-media {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 50%;
+}
 
 /* Portfolio.html */
+
+/* MAIN */
+.portfolio-container {
+  width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: solid 2px tomato;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-list .item {
+  width: 360px;
+  margin-right: 24px;
+}
+
+.portfolio-list .item:nth-child(3n) {
+  margin-right: 0;
+}
+
 
 /* Button */
 
