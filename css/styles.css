@@ -241,6 +241,31 @@ body {
   line-height: 1.5;
 }
 
+.features-list > .item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 8px;
+}
+
+.item.strategy-icon::before {
+  background-image: url(../icons/Strategy.svg);
+}
+
+.item.punctuality-icon::before {
+  background-image: url(../icons/Punctuality.svg);
+}
+
+.item.diligence-icon::before {
+  background-image: url(../icons/Diligence.svg);
+}
+
+.item.technologies-icon::before {
+  background-image: url(../icons/Technologies.svg);
+}
+
+
+
 /*  What are we doing */
 .doing-content {
   display: flex;
